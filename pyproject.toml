@@ -1,0 +1,30 @@
+[build-system]
+requires = ['setuptools>=40.8.0']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = "modern-i18n"
+dynamic = ["version"]
+
+dependencies = []
+requires-python = ">=3.5"
+maintainers = [
+    { name = "Isaev Abbas", email = "abbas.isaev@gmail.com" }
+]
+
+description = "Modern-i18n is a modern library for internationalization (i18n) in Python projects."
+readme = "README.md"
+license-files = ["LICENSE"]
+keywords = ["modern-i18n", "i18n"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.dynamic]
+version = { attr = "modern_i18n.__init__.__version__" }
+
+[project.urls]
+Homepage = "https://github.com/AbbasIsaev/modern-i18n"
+Repository = "https://github.com/AbbasIsaev/modern-i18n.git"
