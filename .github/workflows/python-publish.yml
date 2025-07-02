@@ -41,7 +41,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-      url: https://pypi.org/modern-i18n  # url PyPI with project name
+      url: https://pypi.org/p/modern-i18n  # url PyPI with project name
 
     steps:
       - name: Download all the dists
